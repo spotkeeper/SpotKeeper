@@ -41,6 +41,7 @@
 
     <string name="searchable_hint">Search artists</string>
 
+    <string name="text_no_items_in_queue">No items in queue</string>
     <string name="text_move_to_system_success">Success, now must reboot</string>
     <string name="text_root_access_denied">Root access denied</string>
     <string name="text_error_accessing_root">Error has occurred, check if root is working</string>

@@ -19,6 +19,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/primary_text_disabled_material_dark"
         android:textStyle="italic"
-        android:text="No items in the queue" />
+        android:text="@string/text_no_items_in_queue" />
 
 </LinearLayout>
