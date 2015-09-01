@@ -16,7 +16,7 @@ import java.util.List;
 
 public class QueueAdapter extends RecyclerView.Adapter<QueueAdapter.ViewHolder> {
 
-    private List<Track> mTrackList = new ArrayList<>();
+    private final List<Track> mTrackList = new ArrayList<>();
     private OnTrackClickListener mClickListener;
 
     public QueueAdapter() {}
@@ -54,9 +54,10 @@ public class QueueAdapter extends RecyclerView.Adapter<QueueAdapter.ViewHolder> 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private View view;
-        private TextView trackName, artistName;
-        private ImageView albumCover;
+        private final View view;
+        private final TextView trackName;
+        private final TextView artistName;
+        private final ImageView albumCover;
 
         public ViewHolder(View itemView) {
             super(itemView);

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder> {
 
-    private List<Album> mAlbumList = new ArrayList<>();
+    private final List<Album> mAlbumList = new ArrayList<>();
     private OnAlbumClickListener mClickListener;
 
     public AlbumAdapter() {}
@@ -53,9 +53,10 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder> 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private View view;
-        private TextView albumName, artistName;
-        private ImageView albumCover;
+        private final View view;
+        private final TextView albumName;
+        private final TextView artistName;
+        private final ImageView albumCover;
 
         public ViewHolder(View itemView) {
             super(itemView);

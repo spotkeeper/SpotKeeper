@@ -60,7 +60,7 @@ public class SuggestionAdapter extends SimpleCursorAdapter {
         private static final String FIELD_TYPE_TEXT = " TEXT";
         private static final String FIELD_TYPE_INTEGER = " INTEGER";
 
-        private SQLiteDatabase mDatabase;
+        private final SQLiteDatabase mDatabase;
 
         public Helper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);

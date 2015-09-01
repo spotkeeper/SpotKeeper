@@ -75,9 +75,10 @@ public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     public static class HeaderViewHolder extends RecyclerView.ViewHolder {
 
-        private View view;
-        private TextView artistName, albumName;
-        private ImageView albumCover;
+        private final View view;
+        private final TextView artistName;
+        private final TextView albumName;
+        private final ImageView albumCover;
 
         public HeaderViewHolder(View headerView) {
             super(headerView);
@@ -90,8 +91,9 @@ public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
 
-        private View view;
-        private TextView trackName, trackNumber;
+        private final View view;
+        private final TextView trackName;
+        private final TextView trackNumber;
 
         public ItemViewHolder(View itemView) {
             super(itemView);

@@ -17,7 +17,7 @@ import java.util.List;
 
 public class PlaylistAdapter extends RecyclerView.Adapter<PlaylistAdapter.ViewHolder> {
 
-    private List<Playlist> mPlaylistList = new ArrayList<>();
+    private final List<Playlist> mPlaylistList = new ArrayList<>();
     private OnPlaylistClickListener mClickListener;
 
     public PlaylistAdapter() {}
@@ -56,10 +56,11 @@ public class PlaylistAdapter extends RecyclerView.Adapter<PlaylistAdapter.ViewHo
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private View view;
-        private TextView playlistName, playlistOwner;
-        private ImageView playlistImage;
-        private View detailContainer;
+        private final View view;
+        private final TextView playlistName;
+        private final TextView playlistOwner;
+        private final ImageView playlistImage;
+        private final View detailContainer;
 
         public ViewHolder(View itemView) {
             super(itemView);

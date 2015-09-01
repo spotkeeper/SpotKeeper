@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">SpotKeeper</string>
 
     <string name="activity_label_album">Album</string>
@@ -49,7 +49,7 @@
     <string name="error_encoder_not_supported">Audio encoder not supported, change it in Settings</string>
 
 
-    <string-array name="preference_entries_output_format">
+    <string-array name="preference_entries_output_format" tools:ignore="InconsistentArrays">
         <item>Default</item>
         <item>3GPP</item>
         <item>MPEG-4</item>
@@ -57,7 +57,7 @@
         <item>AMR (Wideband)</item>
         <item>AAC-ADTS</item>
     </string-array>
-    <string-array name="preference_values_output_format">
+    <string-array name="preference_values_output_format" tools:ignore="InconsistentArrays">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -66,7 +66,7 @@
         <item>6</item>
     </string-array>
 
-    <string-array name="preference_entries_audio_encoder">
+    <string-array name="preference_entries_audio_encoder" tools:ignore="InconsistentArrays">
         <item>Default</item>
         <item>AMR (Narrowband)</item>
         <item>AMR (Wideband)</item>
@@ -74,7 +74,7 @@
         <item>High Efficiency AAC</item>
         <item>Enhanced Low Delay AAC</item>
     </string-array>
-    <string-array name="preference_values_audio_encoder">
+    <string-array name="preference_values_audio_encoder" tools:ignore="InconsistentArrays">
         <item>0</item>
         <item>1</item>
         <item>2</item>

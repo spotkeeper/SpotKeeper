@@ -34,7 +34,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:tint="#A000" />
+                    android:tint="#A000"
+                    android:contentDescription="@null" />
 
                 <ImageView
                     android:id="@+id/front_image"
@@ -42,7 +43,8 @@
                     android:layout_height="150dp"
                     android:layout_gravity="end|center_vertical"
                     android:layout_margin="@dimen/keyline_1"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@null" />
 
             </FrameLayout>
 

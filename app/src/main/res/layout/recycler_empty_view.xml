@@ -10,7 +10,8 @@
         android:layout_height="192dp"
         android:src="@drawable/ic_queue_empty"
         android:layout_marginBottom="@dimen/keyline_1"
-        android:tint="@color/primary_text_disabled_material_light" />
+        android:tint="@color/primary_text_disabled_material_light"
+        android:contentDescription="@string/text_no_items_in_queue" />
 
     <TextView
         android:layout_width="wrap_content"

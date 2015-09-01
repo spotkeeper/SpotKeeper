@@ -6,7 +6,6 @@ import android.preference.PreferenceManager;
 
 public class PrefUtils {
 
-    private static final String PREF_KEY_USER_IS_LOGGED_IN = "user_logged_in";
     private static final String PREF_KEY_USER_ID= "user_id";
     private static final String PREF_KEY_USER_ACCESS_TOKEN = "user_access_token";
     private static final String PREF_KEY_LAST_TOKEN_TIME = "last_token_time";

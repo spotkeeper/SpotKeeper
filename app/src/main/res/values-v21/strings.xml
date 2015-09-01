@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string-array name="preference_entries_output_format">
+    <string-array name="preference_entries_output_format" tools:ignore="InconsistentArrays">
         <item>Default</item>
         <item>3GPP</item>
         <item>MPEG-4</item>
@@ -10,7 +10,7 @@
         <item>AAC-ADTS</item>
         <item>WEBM</item>
     </string-array>
-    <string-array name="preference_values_output_format">
+    <string-array name="preference_values_output_format" tools:ignore="InconsistentArrays">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -20,7 +20,7 @@
         <item>9</item>
     </string-array>
 
-    <string-array name="preference_entries_audio_encoder">
+    <string-array name="preference_entries_audio_encoder" tools:ignore="InconsistentArrays">
         <item>Default</item>
         <item>AMR (Narrowband)</item>
         <item>AMR (Wideband)</item>
@@ -29,7 +29,7 @@
         <item>Enhanced Low Delay AAC</item>
         <item>OGG Vorbis</item>
     </string-array>
-    <string-array name="preference_values_audio_encoder">
+    <string-array name="preference_values_audio_encoder" tools:ignore="InconsistentArrays">
         <item>0</item>
         <item>1</item>
         <item>2</item>
