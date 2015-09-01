@@ -276,6 +276,7 @@ public class DataLoader<T> extends AsyncTaskLoader<List<T>> {
             builder.setArtistName(artist.name);
             builder.setAlbumName(album.name);
             builder.setAlbumImageUrl(album.imageUrl);
+            builder.setDuration(jsonTrack.getInt("duration_ms"));
             tracks.add(builder.build());
         }
         return tracks;
@@ -321,6 +322,7 @@ public class DataLoader<T> extends AsyncTaskLoader<List<T>> {
             int length = imagesArray.length();
             if (length != 0)
                 builder.setAlbumImageUrl(imagesArray.getJSONObject(length == 3 ? 1 : 0).getString("url"));
+            builder.setDuration(jsonTrack.getInt("duration_ms"));
             tracks.add(builder.build());
         }
         return tracks;

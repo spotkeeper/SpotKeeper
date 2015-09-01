@@ -12,8 +12,11 @@ import com.anrapps.spotkeeper.entity.Album;
 import com.anrapps.spotkeeper.entity.Track;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -66,6 +69,7 @@ public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 final ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
                 itemViewHolder.trackName.setText(mTrackList.get(position - 1).name);
                 itemViewHolder.trackNumber.setText(String.valueOf(position));
+                itemViewHolder.trackDuration.setText(parseTrackDuration(mTrackList.get(position - 1)));
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown view type");
@@ -92,14 +96,14 @@ public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
 
         private final View view;
-        private final TextView trackName;
-        private final TextView trackNumber;
+        private final TextView trackName, trackNumber, trackDuration;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
             view = itemView;
             trackName = (TextView) view.findViewById(R.id.listitem_track_name);
             trackNumber = (TextView) view.findViewById(R.id.listitem_track_number);
+            trackDuration = (TextView) view.findViewById(R.id.listitem_track_duration);
         }
     }
 
@@ -114,5 +118,10 @@ public class TrackAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     public interface OnTrackClickListener {
         void OnTrackClicked(View view, Track track);
+    }
+
+    private static String parseTrackDuration(final Track track) {
+        Date date = new Date(track.duration);
+        return new SimpleDateFormat("mm:ss", Locale.US).format(date);
     }
 }
