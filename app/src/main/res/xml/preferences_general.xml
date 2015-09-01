@@ -1,0 +1,71 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/preference_category_record" >
+
+        <SwitchPreference
+            android:key="skip_files"
+            android:title="@string/preference_title_skip_files"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="volume_max"
+            android:title="@string/preference_title_volume_max"
+            android:summary="@string/preference_summary_volume_max"
+            android:defaultValue="true" />
+
+        <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:key="output_format"
+            android:title="@string/preference_title_output_format"
+            android:defaultValue="0"
+            android:entries="@array/preference_entries_output_format"
+            android:entryValues="@array/preference_values_output_format"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <ListPreference
+            android:key="audio_encoder"
+            android:title="@string/preference_title_audio_encoder"
+            android:defaultValue="0"
+            android:entries="@array/preference_entries_audio_encoder"
+            android:entryValues="@array/preference_values_audio_encoder"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <ListPreference
+            android:key="encoding_bitrate"
+            android:title="@string/preference_title_encoding_bitrate"
+            android:defaultValue="0"
+            android:entries="@array/preference_entries_encoding_bitrate"
+            android:entryValues="@array/preference_values_encoding_bitrate"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+
+        <ListPreference
+            android:key="sampling_rate"
+            android:title="@string/preference_title_sampling_rate"
+            android:defaultValue="0"
+            android:entries="@array/preference_entries_sampling_rate"
+            android:entryValues="@array/preference_values_sampling_rate"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_category_misc" >
+
+        <Preference
+            android:key="move_to_system"
+            android:title="@string/preference_title_move_to_system"
+            android:summary="@string/preference_summary_move_to_system"/>
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

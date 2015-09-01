@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <TextView
+        android:id="@+id/listitem_track_header_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/keyline_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="No Turning Back" />
+
+    <com.anrapps.spotkeeper.widget.SquaredImageView
+        android:id="@+id/listitem_track_header_album_cover"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/listitem_track_header_artist_name"
+        android:layout_marginStart="@dimen/keyline_1"
+        android:layout_marginBottom="@dimen/keyline_1"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/listitem_track_header_album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listitem_track_header_artist_name"
+        android:layout_marginTop="@dimen/keyline_1"
+        android:layout_marginStart="@dimen/keyline_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:text="Damage Done" />
+
+</RelativeLayout>

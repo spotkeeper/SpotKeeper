@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preference_entries_output_format">
+        <item>Default</item>
+        <item>3GPP</item>
+        <item>MPEG-4</item>
+        <item>AMR (Narrowband)</item>
+        <item>AMR (Wideband)</item>
+        <item>AAC-ADTS</item>
+        <item>WEBM</item>
+    </string-array>
+    <string-array name="preference_values_output_format">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="preference_entries_audio_encoder">
+        <item>Default</item>
+        <item>AMR (Narrowband)</item>
+        <item>AMR (Wideband)</item>
+        <item>AAC Low Complexity</item>
+        <item>High Efficiency AAC</item>
+        <item>Enhanced Low Delay AAC</item>
+        <item>OGG Vorbis</item>
+    </string-array>
+    <string-array name="preference_values_audio_encoder">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

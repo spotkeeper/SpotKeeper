@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">SpotKeeper</string>
+
+    <string name="activity_label_album">Album</string>
+    <string name="activity_label_settings">Settings</string>
+
+    <string name="dialog_title_system_required">Permission required</string>
+    <string name="dialog_message_system_required">This app must be installed as SYSTEM app to work</string>
+    <string name="dialog_positive_system_required">Do it</string>
+    <string name="dialog_negative_system_required">Cancel</string>
+
+    <string name="preference_category_record">Record</string>
+    <string name="preference_category_misc">Misc</string>
+
+    <string name="preference_title_skip_files">Skip existing records</string>
+    <string name="preference_title_volume_max">Set max volume</string>
+    <string name="preference_title_output_format">Output format</string>
+    <string name="preference_title_audio_encoder">Audio encoder</string>
+    <string name="preference_title_encoding_bitrate">Encoding bitrate</string>
+    <string name="preference_title_sampling_rate">Sampling rate</string>
+    <string name="preference_title_move_to_system">Move to system</string>
+
+    <string name="preference_summary_volume_max">Before start recording</string>
+    <string name="preference_summary_move_to_system">Required for CAPTURE_AUDIO_OUTPUT</string>
+    <string name="preference_summary_move_to_system_disabled">Already done</string>
+
+    <string name="notification_title_loading">Loading tracks…</string>
+    <string name="notification_title_recording">Recording tracks</string>
+    <string name="notification_title_paused">Recording paused</string>
+    <string name="notification_title_finished">Recording finished</string>
+
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_resume">Resume</string>
+    <string name="notification_action_cancel">Cancel</string>
+
+
+    <string name="navdrawer_item_artists">Artists</string>
+    <string name="navdrawer_item_playlists">Playlists</string>
+    <string name="navdrawer_item_queue">Queue</string>
+    <string name="navdrawer_item_settings">Settings</string>
+
+    <string name="searchable_hint">Search artists</string>
+
+    <string name="text_move_to_system_success">Success, now must reboot</string>
+    <string name="text_root_access_denied">Root access denied</string>
+    <string name="text_error_accessing_root">Error has occurred, check if root is working</string>
+
+    <string name="error_encoder_not_supported">Audio encoder not supported, change it in Settings</string>
+
+
+    <string-array name="preference_entries_output_format">
+        <item>Default</item>
+        <item>3GPP</item>
+        <item>MPEG-4</item>
+        <item>AMR (Narrowband)</item>
+        <item>AMR (Wideband)</item>
+        <item>AAC-ADTS</item>
+    </string-array>
+    <string-array name="preference_values_output_format">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="preference_entries_audio_encoder">
+        <item>Default</item>
+        <item>AMR (Narrowband)</item>
+        <item>AMR (Wideband)</item>
+        <item>AAC Low Complexity</item>
+        <item>High Efficiency AAC</item>
+        <item>Enhanced Low Delay AAC</item>
+    </string-array>
+    <string-array name="preference_values_audio_encoder">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="preference_entries_encoding_bitrate">
+        <item>Default</item>
+        <item>32 kbit/s</item>
+        <item>96 kbit/s</item>
+        <item>128 kbit/s</item>
+        <item>192 kbit/s</item>
+        <item>320 kbit/s</item>
+        <item>1411.2 kbit/s (CD quality?)</item>
+    </string-array>
+    <string-array name="preference_values_encoding_bitrate">
+        <item>0</item>
+        <item>32000</item>
+        <item>96000</item>
+        <item>128000</item>
+        <item>192000</item>
+        <item>320000</item>
+        <item>1411200</item>
+    </string-array>
+
+    <string-array name="preference_entries_sampling_rate">
+        <item>Default</item>
+        <item>48 kHz (Audio CD)</item>
+        <item>96 kHz (Audio DVD)</item>
+        <item>192 kHz (Audio DVD)</item>
+        <item>352.8 kHz</item>
+    </string-array>
+    <string-array name="preference_values_sampling_rate">
+        <item>0</item>
+        <item>48000</item>
+        <item>96000</item>
+        <item>192000</item>
+        <item>352800</item>
+    </string-array>
+
+</resources>

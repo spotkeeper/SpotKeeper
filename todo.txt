@@ -1,0 +1,6 @@
+-[DONE]: Fix launcher icon and app name
+-[DONE]: Fix ActivitySettings cant scroll to bottom
+-[DONE]: Fix ActivitySettings moveToSystemTask memory leak (with WeakReference)
+-[DONE]: Test for not root devices or root access denied
+-[DONE]: Handle when not logged into spotify
+-[DONE]: Show dialog when CAPTURE_AUDIO_OUTPUT permission is not granted <

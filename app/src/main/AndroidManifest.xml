@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anrapps.spotkeeper" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.anrapps.spotkeeper.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="false" >
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivityMain"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivityPlaylists"
+            android:label="@string/navdrawer_item_playlists" />
+
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivityArtist"
+            android:parentActivityName="com.anrapps.spotkeeper.ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anrapps.spotkeeper.ActivityMain" />
+        </activity>
+
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivityAlbum"
+            android:label="@string/activity_label_album" />
+
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivityQueue"
+            android:label="@string/navdrawer_item_queue"
+            android:theme="@style/AppTheme.NoDrawer" />
+
+        <activity android:name="com.anrapps.spotkeeper.ActivitySearch"
+            android:theme="@style/AppTheme.NoDrawer" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name="com.anrapps.spotkeeper.ActivitySettings"
+            android:label="@string/activity_label_settings"
+            android:theme="@style/AppTheme.NoDrawer" />
+
+        <activity
+            android:name="com.spotify.sdk.android.authentication.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.anrapps.spotkeeper.ServiceRecord"
+            android:exported="false" />
+
+        <provider
+            android:name="com.anrapps.spotkeeper.provider.SearchSuggestionProvider"
+            android:authorities="com.anrapps.spotkeeper.SearchSuggestionProvider"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
