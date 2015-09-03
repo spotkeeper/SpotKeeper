@@ -78,6 +78,7 @@ public class ServiceRecord extends Service implements PlayerNotificationCallback
 
     @Override
     public int onStartCommand(Intent paramIntent, int paramInt1, int paramInt2) {
+        //TODO: Playback skips automatically to the most recent added tracks
         if (paramIntent != null) {
             final String action = paramIntent.getAction();
             if (action != null && action.equals(ACTION_PAUSE)) {
@@ -288,6 +289,7 @@ public class ServiceRecord extends Service implements PlayerNotificationCallback
         } catch (IllegalStateException e) {
             e.printStackTrace();
         }
+        mRecorder.reset();
     }
 
     private void trySetMaxVolume() {
